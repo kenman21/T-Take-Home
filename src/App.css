@@ -30,18 +30,40 @@
   to { transform: rotate(360deg); }
 }
 
+.image-container{
+  margin: 50px;
+  width: 960px;
+  background-color: LightBlue;
+}
+
+.headers {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.widget-header {
+  font-size: 1em;
+  width: 460px;
+  display: inline-block;
+}
+
+.widget-header.title{
+  text-align: left;
+  margin-left: 20px;
+}
+
+.widget-header.disclosure{
+  font-size: .5em;
+  text-align: right;
+  margin-right: 20px;
+}
+
 .image {
-  margin: 20px;
+  margin: 0px 20px 20px;
   width: 280px;
   display: inline-block;
   text-align: left;
   vertical-align: top;
-}
-
-.image-container{
-  margin: 50px;
-  width: 1000px;
-  height: 400px;
 }
 
 .thumbnail {
@@ -55,4 +77,10 @@
 
 .branding{
   font-size: .5em;
+  color: grey;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }

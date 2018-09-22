@@ -7,8 +7,16 @@ class Image extends React.Component{
     return(
       <div className="image">
         <img className="thumbnail" src = {thumbnail}/>
-        <h1 className="title">{this.props.content.name}</h1>
-        <h1 className="branding">{this.props.content.branding}</h1>
+        <h1 className="title">
+          <a className="link" href={this.props.content.url}>
+            {this.props.content.name}
+          </a>
+        </h1>
+        <h1 className="branding">
+          <a className="link" href={this.props.content.url}>
+            {this.props.content.branding}
+          </a>
+        </h1>
       </div>
     )
   }
