@@ -34,7 +34,8 @@
   margin: 20px;
   width: 280px;
   display: inline-block;
-  text-align: left
+  text-align: left;
+  vertical-align: top;
 }
 
 .image-container{
@@ -50,4 +51,8 @@
 
 .title {
   font-size: 1em;
+}
+
+.branding{
+  font-size: .5em;
 }

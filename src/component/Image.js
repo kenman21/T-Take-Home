@@ -8,6 +8,7 @@ class Image extends React.Component{
       <div className="image">
         <img className="thumbnail" src = {thumbnail}/>
         <h1 className="title">{this.props.content.name}</h1>
+        <h1 className="branding">{this.props.content.branding}</h1>
       </div>
     )
   }
