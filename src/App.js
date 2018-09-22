@@ -8,26 +8,27 @@ const URL = "https://api.taboola.com/1.2/json/apitestaccount/recommendations.get
 class App extends Component {
 
   state = {
-    images : {}
+    images : []
   }
 
-  componenDidMount(){
-    this.getImages()
+  componentDidMount(){
+    this.fetchImages()
   }
 
-  getImages = () => {
-    fetch(URL).then(resp => resp.json).then(resp => {
+  fetchImages = () => {
+    fetch(URL).then(resp => resp.json()).then(resp => {
       this.setState({
-        images: resp
-      }, console.log(this.state.images))
+        images: resp.list
+      })
       }
     )
   }
 
   render() {
+    
     return (
       <div className="App">
-        <Widget/>
+        <Widget images={this.state.images}/>
       </div>
     );
   }
