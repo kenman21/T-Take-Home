@@ -9,8 +9,11 @@ class Widget extends React.Component{
     return (
       <div className="image-container">
         <div className="widget-header">
-          {window.navigator.language === 'en-US' ? <h1 className="widget-title">You May Also Enjoy</h1> : <h1 className="widget-title">Te Podría Gustar</h1>}
-          <h1 className="widget-disclosure"> Sponsored Links By Taboola </h1>
+          {window.navigator.language === 'en-US' ? <h1 className="widget-title">You May Enjoy</h1> : <h1 className="widget-title">Te Podría Gustar</h1>}
+          <div className="disclosure-container">
+            <h1 className="widget-disclosure"> Sponsored Links By Taboola </h1>
+            <div className="favicon-container"><img className="favicon" src="https://www.taboola.com/sites/all/themes/taboola2017/images/taboola/favicon.png"/></div>
+          </div>
         </div>
         {images}
       </div>

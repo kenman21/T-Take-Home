@@ -24,8 +24,19 @@
   font-size: 1em;
 }
 
+.disclosure-container {
+  display: flex;
+  align-content: center;
+}
+
+.favicon-container{
+  width: 15px;
+  height: 15px;
+}
+
 .widget-disclosure{
   font-size: .5em;
+  text-align: right;
 }
 
 .image {
@@ -55,6 +66,11 @@
 .image-link {
   text-decoration: none;
   color: inherit;
+}
+
+.favicon {
+  width:100%;
+  height: auto;
 }
 
 @media only screen and (max-width: 450px) {
