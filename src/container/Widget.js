@@ -9,7 +9,7 @@ class Widget extends React.Component{
     return (
       <div className="image-container">
         <div className="widget-header">
-          {window.navigator.language === 'en-US' ? <h1 className="widget-title">You May Like</h1> : <h1 className="widget-title">Te Podría Gustar</h1>}
+          {window.navigator.language === 'en-US' ? <h1 className="widget-title">You May Also Enjoy</h1> : <h1 className="widget-title">Te Podría Gustar</h1>}
           <h1 className="widget-disclosure"> Sponsored Links By Taboola </h1>
         </div>
         {images}

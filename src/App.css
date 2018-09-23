@@ -1,18 +1,19 @@
 .App {
   text-align: center;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .image-container{
-  margin: 50px;
-  width: 960px;
+  margin: 3%;
+  width: 100%;
   background-color: LightBlue;
 }
 
 .widget-header{
-  width: 100%;
+  width: 97%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -20,18 +21,16 @@
 }
 
 .widget-title{
-  margin-left: 20px;
   font-size: 1em;
 }
 
 .widget-disclosure{
-  margin-right: 20px;
   font-size: .5em;
 }
 
 .image {
-  margin: 0px 20px 20px;
-  width: 280px;
+  margin: 0px 1% 1%;
+  width: 31%;
   display: inline-block;
   text-align: left;
   vertical-align: top;
@@ -56,4 +55,33 @@
 .image-link {
   text-decoration: none;
   color: inherit;
+}
+
+@media only screen and (max-width: 450px) {
+
+  .App {
+    width: 90%;
+  }
+
+  .image{
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 1050px){
+  .widget-title{
+    font-size: .75em;
+  }
+
+  .widget-disclosure{
+    font-size: .25em;
+  }
+
+  .image-title {
+    font-size: .75em;
+  }
+
+  .image-branding{
+    font-size: .5em;
+  }
 }
