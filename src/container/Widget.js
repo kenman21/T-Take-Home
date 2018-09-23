@@ -8,9 +8,9 @@ class Widget extends React.Component{
 
     return (
       <div className="image-container">
-        <div className="headers">
-          <h1 className="widget-header title">You May Like</h1>
-          <h1 className="widget-header disclosure"> Sponsored Links By Taboola </h1>
+        <div className="widget-header">
+          <h1 className="widget-title">You May Like</h1>
+          <h1 className="widget-disclosure"> Sponsored Links By Taboola </h1>
         </div>
         {images}
       </div>

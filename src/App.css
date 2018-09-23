@@ -36,26 +36,22 @@
   background-color: LightBlue;
 }
 
-.headers {
+.widget-header{
+  width: 100%;
   margin: 0 auto;
-  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.widget-header {
-  font-size: 1em;
-  width: 460px;
-  display: inline-block;
-}
-
-.widget-header.title{
-  text-align: left;
+.widget-title{
   margin-left: 20px;
+  font-size: 1em;
 }
 
-.widget-header.disclosure{
-  font-size: .5em;
-  text-align: right;
+.widget-disclosure{
   margin-right: 20px;
+  font-size: .5em;
 }
 
 .image {
@@ -76,7 +72,7 @@
 }
 
 .branding{
-  font-size: .5em;
+  font-size: .75em;
   color: grey;
 }
 
