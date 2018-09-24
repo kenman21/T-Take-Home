@@ -75,6 +75,8 @@
 
 @media only screen and (max-width: 450px) {
 
+  /* Adjust to single column for mobile users */
+
   .App {
     width: 90%;
   }
@@ -82,9 +84,13 @@
   .image{
     width: 96%;
   }
+
 }
 
 @media only screen and (max-width: 1050px){
+
+  /* Adjust font sizes for smaller screens */
+
   .widget-title{
     font-size: .75em;
   }
